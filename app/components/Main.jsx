@@ -1,0 +1,30 @@
+var React = require("react");
+var Nav = require("Nav");
+
+// var Main = React.createClass({
+//   render: function () {
+//     return (
+//       <div className="container">
+//         <Nav/>
+//         <h2>Main Component</h2>
+//         {this.props.children}
+//       </div>
+//     );
+//   }
+// });
+
+var Main = (props) => {
+  return (
+    <div className="container">
+      <Nav/>
+      <div className="row">
+        <div className="columns medium-6 large-4 small-centered">
+          <p>Main.jsx Rendered</p>
+          {props.children}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+module.exports = Main;
