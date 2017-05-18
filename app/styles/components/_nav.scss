@@ -6,6 +6,10 @@ li.menu-text {
   color: $nav-text-color;
 }
 
+.top-bar .active-link {
+  font-weight: bold;
+}
+
 #githubLink {
   display: $githubLinkDisplay;
   padding: 0;
